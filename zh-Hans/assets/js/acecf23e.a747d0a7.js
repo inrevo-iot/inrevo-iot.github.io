@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkdcp_docs=self.webpackChunkdcp_docs||[]).push([[1903],{1912:s=>{s.exports=JSON.parse('{"blogBasePath":"/zh-Hans/blog","blogTitle":"Blog","authorsListPath":"/zh-Hans/blog/authors"}')}}]);
