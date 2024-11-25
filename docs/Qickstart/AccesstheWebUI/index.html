@@ -5,7 +5,7 @@
 <meta name="generator" content="Docusaurus v3.5.2">
 <title data-rh="true">Access the Web UI | Inrevo IOT</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:image" content="https://your-docusaurus-site.example.com/img/docusaurus-social-card.jpg"><meta data-rh="true" name="twitter:image" content="https://your-docusaurus-site.example.com/img/docusaurus-social-card.jpg"><meta data-rh="true" property="og:url" content="https://your-docusaurus-site.example.com/docs/Qickstart/AccesstheWebUI"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" property="og:locale:alternate" content="zh_Hans"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="Access the Web UI | Inrevo IOT"><meta data-rh="true" name="description" content="After successfully installing Inrevo IOT system, you can access the Web UI from a browser."><meta data-rh="true" property="og:description" content="After successfully installing Inrevo IOT system, you can access the Web UI from a browser."><link data-rh="true" rel="icon" href="/img/favicon.ico"><link data-rh="true" rel="canonical" href="https://your-docusaurus-site.example.com/docs/Qickstart/AccesstheWebUI"><link data-rh="true" rel="alternate" href="https://your-docusaurus-site.example.com/docs/Qickstart/AccesstheWebUI" hreflang="en"><link data-rh="true" rel="alternate" href="https://your-docusaurus-site.example.com/zh-Hans/docs/Qickstart/AccesstheWebUI" hreflang="zh-Hans"><link data-rh="true" rel="alternate" href="https://your-docusaurus-site.example.com/docs/Qickstart/AccesstheWebUI" hreflang="x-default"><link rel="alternate" type="application/rss+xml" href="/blog/rss.xml" title="Inrevo IOT RSS Feed">
 <link rel="alternate" type="application/atom+xml" href="/blog/atom.xml" title="Inrevo IOT Atom Feed"><link rel="stylesheet" href="/assets/css/styles.9cbf8fdd.css">
-<script src="/assets/js/runtime~main.8917faad.js" defer="defer"></script>
+<script src="/assets/js/runtime~main.713e6e9a.js" defer="defer"></script>
 <script src="/assets/js/main.62ad9ba9.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
@@ -30,17 +30,17 @@
 <p>You can Add/Delete/Modify users</p>
 <p><img decoding="async" loading="lazy" alt="image-20240924171453751" src="/assets/images/user-74e514265d2b2af3e4db0d9d84075566.png" width="2206" height="585" class="img_ev3q"></p>
 <table><thead><tr><th>Security Group</th><th>Authority</th></tr></thead><tbody><tr><td>Administrator</td><td>can access all functions.</td></tr><tr><td>Operator</td><td>can access Device drivers, Data Points, Data Query, Data Vista.</td></tr><tr><td>User</td><td>can access Data Query, Data Vista.</td></tr></tbody></table>
+<p>​</p>
 <h4 class="anchor anchorWithStickyNavbar_LWe7" id="options">Options<a href="#options" class="hash-link" aria-label="Direct link to Options" title="Direct link to Options">​</a></h4>
 <h5 class="anchor anchorWithStickyNavbar_LWe7" id="device-drivers">Device Drivers<a href="#device-drivers" class="hash-link" aria-label="Direct link to Device Drivers" title="Direct link to Device Drivers">​</a></h5>
 <p>Maximum driver number - set the maximum driver number can be created on this node.</p>
 <p><em>note:  It is recommended not to exceed twice the number of CPU cores on the machine.</em></p>
-<p>​</p>
 <h5 class="anchor anchorWithStickyNavbar_LWe7" id="history">History<a href="#history" class="hash-link" aria-label="Direct link to History" title="Direct link to History">​</a></h5>
+<p>Enable - whether to store historical data.</p>
 <p>Maximum retention time - set the maximum number of days to retain historical data (including alarm data).</p>
-<p>​</p>
 <h5 class="anchor anchorWithStickyNavbar_LWe7" id="database">Database<a href="#database" class="hash-link" aria-label="Direct link to Database" title="Direct link to Database">​</a></h5>
 <p>You can select a database type and enter the connection parameters for storing real-time and historical data for the data points.</p>
-<p>The currently supported database types are SQLite, MariaDB, MySQL, SQL Server, and PostgreSQL.</p>
+<p>The currently supported database types are SQLite, MariaDB, MySQL, SQL Server, PostgreSQL, Oracle, and InfluxDB.</p>
 <ol>
 <li>SQLite</li>
 </ol>
@@ -49,9 +49,9 @@
 <p><em>Note: SQLite is intended for testing purposes only and should not be used in a production environment.</em></p>
 <ol start="2">
 <li>
-<p>MariaDB, MySQL, SQL Server, and PostgreSQL</p>
+<p>MariaDB, MySQL, SQL Server, PostgreSQL, Oracle, and InfluxDB</p>
 <p>You need to install and prepare the database you want to choose in advance.</p>
-<p>Enter the database IP, port, username, and password as indicated in the image.</p>
+<p>Enter the database IP, port, username, password, and so on as indicated in the image.</p>
 <p><img decoding="async" loading="lazy" alt="image-20240924170025291" src="/assets/images/db-e0274db9958a15a016097129a043a1e7.png" width="658" height="170" class="img_ev3q"></p>
 <p><em>Note:</em></p>
 <p><em>(1) The database account must have permissions to create databases and perform CRUD (create, read, update, delete)  operations.</em></p>
@@ -60,19 +60,29 @@
 <p><em>MySQL 5.7+</em></p>
 <p><em>PostgreSQL  9.5+</em></p>
 <p><em>SqlServer 2012+</em></p>
-<p>​</p>
+<p><em>Oracle 11g+</em></p>
+<p><em>InfluxDB v2.0+</em></p>
 </li>
 </ol>
 <h5 class="anchor anchorWithStickyNavbar_LWe7" id="opc-ua-server">OPC UA Server<a href="#opc-ua-server" class="hash-link" aria-label="Direct link to OPC UA Server" title="Direct link to OPC UA Server">​</a></h5>
-<p>Inrevo IOT starts an OPC UA Server to provide data for third-party access. You can set the parameters for the OPC UA server.</p>
-<p><img decoding="async" loading="lazy" alt="image-20240924172840255" src="/assets/images/opcua-d8a48d51efbc49ef4b38883ba80c43ef.png" width="830" height="625" class="img_ev3q"></p>
-<p>​</p>
+<p>Inrevo IOT starts an OPC UA Server (if Enabled) to provide data for third-party access. You can set the parameters for the OPC UA server.</p>
+<p><img decoding="async" loading="lazy" alt="image-20241121175623268" src="/assets/images/opcua-9ff563220eeb4f8cea04baf82ea573e7.png" width="1158" height="1012" class="img_ev3q"></p>
+<p>​       <strong>Enable</strong>: Whether to enable the OPC UA Server</p>
 <h5 class="anchor anchorWithStickyNavbar_LWe7" id="connect-to-monitor">Connect to monitor<a href="#connect-to-monitor" class="hash-link" aria-label="Direct link to Connect to monitor" title="Direct link to Connect to monitor">​</a></h5>
 <p>Inrevo IOT node can connect to the Inrevo IOT monitor.</p>
 <p><img decoding="async" loading="lazy" alt="image-20240924170504734" src="/assets/images/connect2monitor-3ea5f41c34042556efab268648149161.png" width="830" height="153" class="img_ev3q"></p>
+<p>Key parameters description:</p>
 <p><strong>Enable</strong>: Whether to enable the connection</p>
 <p><strong>Unidirectional</strong>: If selected, it indicates unidirectional transmission, meaning the monitoring node can only read from this node; otherwise, it indicates bidirectional transmission, meaning the monitoring node can both read and write to this node.</p>
 <p>Enter the IP, Port, Username, and Password of the Inrevo IOT monitor you want to connect to.</p>
+<h5 class="anchor anchorWithStickyNavbar_LWe7" id="forward-to-cloud">Forward to cloud<a href="#forward-to-cloud" class="hash-link" aria-label="Direct link to Forward to cloud" title="Direct link to Forward to cloud">​</a></h5>
+<p>Inrevo IOT node can forward (if Enabled) OT data to Cloud.</p>
+<p><img decoding="async" loading="lazy" alt="image-20241121181354649" src="/assets/images/cloud-d067654f1fce1d338634ba4de7d70440.png" width="1138" height="367" class="img_ev3q"></p>
+<p>Key parameters description:</p>
+<p><strong>Target</strong>: Data receiving destination. The currently supported target types are Kafka, MQTT and AWS IoT.</p>
+<p><strong>Buffer Data</strong>: When the network to Cloud fails, the Inrevo IoT Node will buffer OT data to database you have selected.  When the network is restored, the Inrevo IoT Node will immediately resume transmitting all the data collected during the network outage to the cloud platform, ensuring the integrity and accuracy of the cloud data. This parameter determines the number of days the data is cached. 0 means no caching.</p>
+<p><strong>Server Address</strong>: Target&#x27;s IP<!-- -->:Port<!-- --> or URL.  Format examples are as follows:</p>
+<table><thead><tr><th style="text-align:center">Target</th><th style="text-align:center">Server Address</th></tr></thead><tbody><tr><td style="text-align:center">Kafka</td><td style="text-align:center">192.168.3.3:9092,192.168.3.4:9092,192.168.3.5:9092</td></tr><tr><td style="text-align:center">MQTT</td><td style="text-align:center">192.168.3.3:1883</td></tr><tr><td style="text-align:center">MQTT (SSL enabled)</td><td style="text-align:center">192.168.3.3:8883</td></tr><tr><td style="text-align:center">AWS IoT</td><td style="text-align:center">xxx-ats.iot.cn-northwest-1.amazonaws.com.cn</td></tr></tbody></table>
 <p>​</p>
 <h4 class="anchor anchorWithStickyNavbar_LWe7" id="notification">Notification<a href="#notification" class="hash-link" aria-label="Direct link to Notification" title="Direct link to Notification">​</a></h4>
 <p>You can configure alert notifications, which will be sent via email or SMS when the point data meets predefined conditions and triggers an alert.</p>
@@ -81,7 +91,6 @@
 <p>To enable E-Mail as a notification type you will need to enable SMTP service for your email account according to the instructions on your email server provider&#x27;s website and obtain an authorization code to use as the password.</p>
 <p>The email server format is server_address<!-- -->:port<!-- -->, Here are some examples:</p>
 <table><thead><tr><th>email server format</th><th>to enable SMTP service</th></tr></thead><tbody><tr><td>smtp.gmail.com:587</td><td>enable <a href="https://help.accredible.com/s/article/smtp-setup-in-gmail-inbox?language=en_US" target="_blank" rel="noopener noreferrer">SMTP</a></td></tr><tr><td>smtp-mail.outlook.com:587</td><td>enable <a href="https://support.microsoft.com/en-us/office/pop-imap-and-smtp-settings-for-outlook-com-d088b986-291d-42b8-9564-9c414e2aa040" target="_blank" rel="noopener noreferrer">SMTP</a> , enable <a href="https://support.microsoft.com/en-us/account-billing/how-to-use-two-step-verification-with-your-microsoft-account-c7910146-672f-01e9-50a0-93b4585e7eb4" target="_blank" rel="noopener noreferrer">Two-step verification</a> and enable <a href="https://docs.microsoft.com/en-us/azure/active-directory/develop/v2-oauth2-auth-code-flow" target="_blank" rel="noopener noreferrer">OAuth 2.0 authorization</a> for sending notifications.  And concatenate tenant, client_id, and client_secret in the format tenant:client_id<!-- -->:client_secret<!-- --> to form the Password</td></tr></tbody></table>
-<p>​</p>
 <h5 class="anchor anchorWithStickyNavbar_LWe7" id="sms-notification">SMS Notification<a href="#sms-notification" class="hash-link" aria-label="Direct link to SMS Notification" title="Direct link to SMS Notification">​</a></h5>
 <p><img decoding="async" loading="lazy" alt="image-20240924171814648" src="/assets/images/sms-0e7af40eac412fa4bc10b5e704a6f268.png" width="831" height="216" class="img_ev3q"></p>
 <p>To enable SMS as a notification type you will need to use the <a href="https://www.twilio.com" target="_blank" rel="noopener noreferrer">Twilio service</a>.</p>
@@ -108,11 +117,11 @@
 <p>After logging in, you can modify system parameters and activate the system.</p>
 <h4 class="anchor anchorWithStickyNavbar_LWe7" id="options-1">Options<a href="#options-1" class="hash-link" aria-label="Direct link to Options" title="Direct link to Options">​</a></h4>
 <h5 class="anchor anchorWithStickyNavbar_LWe7" id="history-1">History<a href="#history-1" class="hash-link" aria-label="Direct link to History" title="Direct link to History">​</a></h5>
+<p>Enable - whether to store historical data.</p>
 <p>Maximum retention time - set the maximum number of days to retain historical data (including alarm data).</p>
-<p>​</p>
 <h5 class="anchor anchorWithStickyNavbar_LWe7" id="database-1">Database<a href="#database-1" class="hash-link" aria-label="Direct link to Database" title="Direct link to Database">​</a></h5>
 <p>You can select a database type and enter the connection parameters for storing real-time and historical data for the data points.</p>
-<p>The currently supported database types are SQLite, MariaDB, MySQL, SQL Server, and PostgreSQL.</p>
+<p>The currently supported database types are  SQLite, MariaDB, MySQL, SQL Server, PostgreSQL, Oracle, and InfluxDB.</p>
 <ol>
 <li>SQLite</li>
 </ol>
@@ -121,7 +130,7 @@
 <p><em>Note: SQLite is intended for testing purposes only and should not be used in a production environment.</em></p>
 <ol start="2">
 <li>
-<p>MariaDB, MySQL, SQL Server, and PostgreSQL</p>
+<p>MariaDB, MySQL, SQL Server, PostgreSQL, Oracle, and InfluxDB</p>
 <p><img decoding="async" loading="lazy" alt="image-20240924170025291" src="/assets/images/db-e0274db9958a15a016097129a043a1e7.png" width="658" height="170" class="img_ev3q"></p>
 <p>Enter the database IP, port, username, and password as indicated in the image.</p>
 <p><em>Note:</em></p>
@@ -131,13 +140,14 @@
 <p><em>MySQL 5.7+</em></p>
 <p><em>PostgreSQL  9.5+</em></p>
 <p><em>SqlServer 2012+</em></p>
-<p>​</p>
-<h5 class="anchor anchorWithStickyNavbar_LWe7" id="opc-ua-server-1">OPC UA Server<a href="#opc-ua-server-1" class="hash-link" aria-label="Direct link to OPC UA Server" title="Direct link to OPC UA Server">​</a></h5>
-<p>Inrevo IOT starts an OPC UA Server to provide data for third-party access. You can set the parameters for the OPC UA server.</p>
+<p><em>Oracle 11g+</em></p>
+<p><em>InfluxDB v2.0+</em></p>
 </li>
 </ol>
-<p><img decoding="async" loading="lazy" alt="image-20240924172840255" src="/assets/images/opcua-d8a48d51efbc49ef4b38883ba80c43ef.png" width="830" height="625" class="img_ev3q"></p>
-<p>​</p>
+<h5 class="anchor anchorWithStickyNavbar_LWe7" id="opc-ua-server-1">OPC UA Server<a href="#opc-ua-server-1" class="hash-link" aria-label="Direct link to OPC UA Server" title="Direct link to OPC UA Server">​</a></h5>
+<p>Inrevo IOT starts an OPC UA Server  (if Enabled) to provide data for third-party access. You can set the parameters for the OPC UA server.</p>
+<p><img decoding="async" loading="lazy" alt="image-20240924172840255" src="/assets/images/opcua-9ff563220eeb4f8cea04baf82ea573e7.png" width="1158" height="1012" class="img_ev3q"></p>
+<p>​    <strong>Enable</strong>: Whether to enable the OPC UA Server</p>
 <h5 class="anchor anchorWithStickyNavbar_LWe7" id="monitor-authentication">Monitor Authentication<a href="#monitor-authentication" class="hash-link" aria-label="Direct link to Monitor Authentication" title="Direct link to Monitor Authentication">​</a></h5>
 <p>You can set monitor&#x27;s account (username and password) for Inrevo IOT node to connect.</p>
 <p><img decoding="async" loading="lazy" alt="image-20240925130755583" src="/assets/images/monitor-auth-7d77a2d5f20f13f985a74d2637415b8f.png" width="1285" height="171" class="img_ev3q"></p>

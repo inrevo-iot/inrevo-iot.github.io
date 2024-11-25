@@ -5,7 +5,7 @@
 <meta name="generator" content="Docusaurus v3.5.2">
 <title data-rh="true">访问网页界面 | Inrevo IOT</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:image" content="https://your-docusaurus-site.example.com/zh-Hans/img/docusaurus-social-card.jpg"><meta data-rh="true" name="twitter:image" content="https://your-docusaurus-site.example.com/zh-Hans/img/docusaurus-social-card.jpg"><meta data-rh="true" property="og:url" content="https://your-docusaurus-site.example.com/zh-Hans/docs/Qickstart/AccesstheWebUI"><meta data-rh="true" property="og:locale" content="zh_Hans"><meta data-rh="true" property="og:locale:alternate" content="en"><meta data-rh="true" name="docusaurus_locale" content="zh-Hans"><meta data-rh="true" name="docsearch:language" content="zh-Hans"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="访问网页界面 | Inrevo IOT"><meta data-rh="true" name="description" content="Inrevo IOT系统安装成功后，您可以通过浏览器访问Web UI。"><meta data-rh="true" property="og:description" content="Inrevo IOT系统安装成功后，您可以通过浏览器访问Web UI。"><link data-rh="true" rel="icon" href="/zh-Hans/img/favicon.ico"><link data-rh="true" rel="canonical" href="https://your-docusaurus-site.example.com/zh-Hans/docs/Qickstart/AccesstheWebUI"><link data-rh="true" rel="alternate" href="https://your-docusaurus-site.example.com/docs/Qickstart/AccesstheWebUI" hreflang="en"><link data-rh="true" rel="alternate" href="https://your-docusaurus-site.example.com/zh-Hans/docs/Qickstart/AccesstheWebUI" hreflang="zh-Hans"><link data-rh="true" rel="alternate" href="https://your-docusaurus-site.example.com/docs/Qickstart/AccesstheWebUI" hreflang="x-default"><link rel="alternate" type="application/rss+xml" href="/zh-Hans/blog/rss.xml" title="Inrevo IOT RSS Feed">
 <link rel="alternate" type="application/atom+xml" href="/zh-Hans/blog/atom.xml" title="Inrevo IOT Atom Feed"><link rel="stylesheet" href="/zh-Hans/assets/css/styles.9cbf8fdd.css">
-<script src="/zh-Hans/assets/js/runtime~main.3e398def.js" defer="defer"></script>
+<script src="/zh-Hans/assets/js/runtime~main.2ee731a5.js" defer="defer"></script>
 <script src="/zh-Hans/assets/js/main.ba9604e3.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
@@ -32,15 +32,16 @@
 <table><thead><tr><th>安全组</th><th>权限</th></tr></thead><tbody><tr><td>Administrator</td><td>可访问所有功能</td></tr><tr><td>Operator</td><td>可以访问 Device drivers, Data Points, Data Query, Data Vista.</td></tr><tr><td>User</td><td>可以访问 Data Query, Data Vista.</td></tr></tbody></table>
 <h4 class="anchor anchorWithStickyNavbar_LWe7" id="选项">选项<a href="#选项" class="hash-link" aria-label="选项的直接链接" title="选项的直接链接">​</a></h4>
 <h5 class="anchor anchorWithStickyNavbar_LWe7" id="设备驱动">设备驱动<a href="#设备驱动" class="hash-link" aria-label="设备驱动的直接链接" title="设备驱动的直接链接">​</a></h5>
-<p>Maximum driver number - 设置该节点可创建的最大驱动个数。</p>
+<p>最大驱动数 - 设置该节点可创建的最大驱动个数。</p>
 <p><em>注意:建议该数值不要超过机器CPU核数的两倍。</em></p>
 <p>​</p>
 <h5 class="anchor anchorWithStickyNavbar_LWe7" id="历史">历史<a href="#历史" class="hash-link" aria-label="历史的直接链接" title="历史的直接链接">​</a></h5>
-<p>Maximum retention time - 设置历史数据(包括告警数据)的最大保留天数。</p>
+<p>启用 - 是否存储历史数据。</p>
+<p>最大保留时间 - 设置历史数据(包括告警数据)的最大保留天数。</p>
 <p>​</p>
 <h5 class="anchor anchorWithStickyNavbar_LWe7" id="数据库">数据库<a href="#数据库" class="hash-link" aria-label="数据库的直接链接" title="数据库的直接链接">​</a></h5>
 <p>您可以选择一种数据库并输入连接参数，用于存储数据点位的实时和历史数据。</p>
-<p>目前支持的数据库类型有SQLite、MariaDB、MySQL、SQL Server和PostgreSQL。</p>
+<p>目前支持的数据库类型有SQLite、MariaDB、MySQL、SQL Server、PostgreSQL、Oracle和InfluxDB。</p>
 <ol>
 <li>SQLite</li>
 </ol>
@@ -49,9 +50,9 @@
 <p><em>注意：SQLite仅用于测试目的，不应在生产环境中使用。</em></p>
 <ol start="2">
 <li>
-<p>MariaDB, MySQL, SQL Server, and PostgreSQL</p>
+<p>MariaDB, MySQL, SQL Server, PostgreSQL, Oracle, and InfluxDB</p>
 <p>你需要事先安装准备好拟选定的数据库。</p>
-<p>如图所示，输入数据库IP、端口、用户名和密码。</p>
+<p>如图所示，输入数据库IP、端口、用户名和密码等。</p>
 <p><img decoding="async" loading="lazy" alt="image-20240924170025291" src="/zh-Hans/assets/images/db-e0274db9958a15a016097129a043a1e7.png" width="658" height="170" class="img_ev3q"></p>
 <p><em>注意：</em></p>
 <p><em>(1) 数据库帐户必须具有创建数据库和执行CRUD(创建、读取、更新、删除)操作的权限。</em></p>
@@ -60,19 +61,30 @@
 <p><em>MySQL 5.7+</em></p>
 <p><em>PostgreSQL  9.5+</em></p>
 <p><em>SqlServer 2012+</em></p>
+<p><em>Oracle 11g+</em></p>
+<p><em>InfluxDB v2.0+</em></p>
 <p>​</p>
 </li>
 </ol>
 <h5 class="anchor anchorWithStickyNavbar_LWe7" id="opc-ua-服务器">OPC UA 服务器<a href="#opc-ua-服务器" class="hash-link" aria-label="OPC UA 服务器的直接链接" title="OPC UA 服务器的直接链接">​</a></h5>
-<p>Inrevo IOT启动了一个OPC UA Server，提供数据供第3方接入访问。您可以设置该OPC UA服务器的相关参数。</p>
-<p><img decoding="async" loading="lazy" alt="image-20240924172840255" src="/zh-Hans/assets/images/opcua-d8a48d51efbc49ef4b38883ba80c43ef.png" width="830" height="625" class="img_ev3q"></p>
+<p>如果启用了，Inrevo IOT会启动一个OPC UA Server，提供数据供第3方接入访问。您可以设置该OPC UA服务器的相关参数。</p>
+<p><img decoding="async" loading="lazy" alt="image-20240924172840255" src="/zh-Hans/assets/images/opcua-9ff563220eeb4f8cea04baf82ea573e7.png" width="1158" height="1012" class="img_ev3q"></p>
 <p>​</p>
 <h5 class="anchor anchorWithStickyNavbar_LWe7" id="连接监控节点">连接监控节点<a href="#连接监控节点" class="hash-link" aria-label="连接监控节点的直接链接" title="连接监控节点的直接链接">​</a></h5>
 <p>Inrevo IOT数据节点可连接Inrevo IOT监控节点。</p>
 <p><img decoding="async" loading="lazy" alt="image-20240924170504734" src="/zh-Hans/assets/images/connect2monitor-3ea5f41c34042556efab268648149161.png" width="830" height="153" class="img_ev3q"></p>
+<p>关键参数描述：</p>
 <p><strong>Enable</strong>: 是否启用连接</p>
 <p><strong>Unidirectional</strong>: 如果选中，表示单向传输，即监控节点只能从该数据节点读取数据；否则，表示双向传输，即监控节点对该数据节点既可读又可写。</p>
 <p>输入要连接的Inrevo IOT监控节点的IP、端口、用户名和密码。</p>
+<h5 class="anchor anchorWithStickyNavbar_LWe7" id="转发到云端">转发到云端<a href="#转发到云端" class="hash-link" aria-label="转发到云端的直接链接" title="转发到云端的直接链接">​</a></h5>
+<p>Inrevo IOT node can forward (if Enabled) OT data to Cloud. The currently supported target types are Kafka, MQTT and AWS IoT.</p>
+<p><img decoding="async" loading="lazy" alt="image-20241121181354649" src="/zh-Hans/assets/images/cloud-d067654f1fce1d338634ba4de7d70440.png" width="1138" height="367" class="img_ev3q"></p>
+<p>关键参数描述：</p>
+<p><strong>Target</strong>: 数据接收目的地。当前版本支持Kafka、MQTT和AWS IoT。</p>
+<p><strong>Buffer Data</strong>: 当网络连接到云端失败时，Inrevo IoT 节点会将 OT 数据缓冲到您选择的数据库中。当网络恢复时，Inrevo IoT 节点会立即恢复传输在网络中断期间收集的所有数据到云端平台，确保云端数据的完整性和准确性。此参数决定了数据缓存的天数。0 表示不缓存。</p>
+<p><strong>Server Address</strong>:  IP<!-- -->:Port<!-- -->或URL。 格式参考下面的示例：</p>
+<table><thead><tr><th style="text-align:center">Target</th><th style="text-align:center">Server Address</th></tr></thead><tbody><tr><td style="text-align:center">Kafka</td><td style="text-align:center">192.168.3.3:9092,192.168.3.4:9092,192.168.3.5:9092</td></tr><tr><td style="text-align:center">MQTT</td><td style="text-align:center">192.168.3.3:1883</td></tr><tr><td style="text-align:center">MQTT (SSL enabled)</td><td style="text-align:center">192.168.3.3:8883</td></tr><tr><td style="text-align:center">AWS IoT</td><td style="text-align:center">xxx-ats.iot.cn-northwest-1.amazonaws.com.cn</td></tr></tbody></table>
 <p>​</p>
 <h4 class="anchor anchorWithStickyNavbar_LWe7" id="通知">通知<a href="#通知" class="hash-link" aria-label="通知的直接链接" title="通知的直接链接">​</a></h4>
 <p>您可以配置告警通知，当点位数据满足预定义条件并触发告警时，告警通知将通过电子邮件或SMS发送。</p>
@@ -98,33 +110,33 @@
 <p><a href="http://192.168.101.160:52000" target="_blank" rel="noopener noreferrer">http://192.168.101.160:52000</a></p>
 <p>以访问web界面。</p>
 <p>​</p>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="登录监控节点网页">登录监控节点网页<a href="#登录监控节点  网页" class="hash-link" aria-label="登录监控节点网页的直接链接" title="登录监控节点网页的直接链接">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="登录监控节点网页">登录监控节点网页<a href="#登录监控节点网页" class="hash-link" aria-label="登录监控节点网页的直接链接" title="登录监  控节点网页的直接链接">​</a></h3>
 <p><img decoding="async" loading="lazy" alt="image-20240924172328517" src="/zh-Hans/assets/images/monitor-ee0056fe0dd0d83088d0ae2696eeab19.png" width="518" height="279" class="img_ev3q"></p>
 <p>Inrevo IOT监控节点默认管理员帐号为：</p>
 <table><thead><tr><th>用户名</th><th>密码</th></tr></thead><tbody><tr><td>super</td><td>inrevo</td></tr></tbody></table>
 <p>稍后您可以修改密码。</p>
 <p>​</p>
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="系统设置-1">系统设置<a href="#系统设置-1" class="hash-link" aria-label="系统设置的直接链接" title="系统设置的直接链接">​</a></h3>
-<p>After logging in, you can modify system parameters and activate the system.</p>
 <p>登录后，您可以修改系统参数和激活本系统。</p>
 <h4 class="anchor anchorWithStickyNavbar_LWe7" id="选项-1">选项<a href="#选项-1" class="hash-link" aria-label="选项的直接链接" title="选项的直接链接">​</a></h4>
 <h5 class="anchor anchorWithStickyNavbar_LWe7" id="历史-1">历史<a href="#历史-1" class="hash-link" aria-label="历史的直接链接" title="历史的直接链接">​</a></h5>
-<p>Maximum retention time - 设置历史数据(包括告警数据)的最大保留天数。</p>
+<p>启用 - 是否存储历史数据。</p>
+<p>最大保留时间 - 设置历史数据(包括告警数据)的最大保留天数。</p>
 <p>​</p>
 <h5 class="anchor anchorWithStickyNavbar_LWe7" id="数据库-1">数据库<a href="#数据库-1" class="hash-link" aria-label="数据库的直接链接" title="数据库的直接链接">​</a></h5>
 <p>您可以选择一种数据库并输入连接参数，用于存储数据点位的实时和历史数据。</p>
-<p>目前支持的数据库类型有SQLite、MariaDB、MySQL、SQL Server和PostgreSQL。</p>
+<p>目前支持的数据库类型有SQLite、MariaDB、MySQL、SQL Server、PostgreSQL、Oracle和InfluxDB.。</p>
 <ol>
 <li>SQLite</li>
 </ol>
 <p><img decoding="async" loading="lazy" alt="image-20240924165843852" src="/zh-Hans/assets/images/sqlite-9ab9994155c88de5d5cee16dec373787.png" width="650" height="171" class="img_ev3q"></p>
-<p>在您的机器或计 算机上指定一个sqlite数据库路径，Inrevo IOT系统将自动创建sqlite数据库。</p>
+<p>在您的机器或计算机上指定一个sqlite数据库路径，Inrevo IOT系统将自动创建sqlite数据库。</p>
 <p><em>注意：SQLite仅用于测试目的，不应在生产环境中使用。</em></p>
 <ol start="2">
 <li>
-<p>MariaDB, MySQL, SQL Server, and PostgreSQL</p>
+<p>MariaDB, MySQL, SQL Server, PostgreSQL, Oracle, and InfluxDB.</p>
 <p>你需要事先安装准备好拟选定的数据库。</p>
-<p>如图所示，输入数据库IP、端口、用户名和密码。</p>
+<p>如图所示，输入数据库IP、端口、用户名和密码等。</p>
 <p><img decoding="async" loading="lazy" alt="image-20240924170025291" src="/zh-Hans/assets/images/db-e0274db9958a15a016097129a043a1e7.png" width="658" height="170" class="img_ev3q"></p>
 <p><em>注意：</em></p>
 <p><em>(1) 数据库帐户必须具有创建数据库和执行CRUD(创建、读取、更新、删除)操作的权限。</em></p>
@@ -133,12 +145,14 @@
 <p><em>MySQL 5.7+</em></p>
 <p><em>PostgreSQL  9.5+</em></p>
 <p><em>SqlServer 2012+</em></p>
+<p><em>Oracle 11g+</em></p>
+<p><em>InfluxDB v2.0+</em></p>
 <p>​</p>
 </li>
 </ol>
 <h5 class="anchor anchorWithStickyNavbar_LWe7" id="opc-ua-server">OPC UA Server<a href="#opc-ua-server" class="hash-link" aria-label="OPC UA Server的直接链接" title="OPC UA Server的直接链接">​</a></h5>
-<p>Inrevo IOT启动了一个OPC UA Server，提供数据供第3方接入访问。您可以设置该OPC UA服务器的相关参数。</p>
-<p><img decoding="async" loading="lazy" alt="image-20240924172840255" src="/zh-Hans/assets/images/opcua-d8a48d51efbc49ef4b38883ba80c43ef.png" width="830" height="625" class="img_ev3q"></p>
+<p>如果启用了，Inrevo IOT会启动一个OPC UA Server，提供数据供第3方接入访问。您可以设置该OPC UA服务器的相关参数。</p>
+<p><img decoding="async" loading="lazy" alt="image-20240924172840255" src="/zh-Hans/assets/images/opcua-9ff563220eeb4f8cea04baf82ea573e7.png" width="1158" height="1012" class="img_ev3q"></p>
 <p>​</p>
 <p>​</p>
 <h5 class="anchor anchorWithStickyNavbar_LWe7" id="监控节点认证">监控节点认证<a href="#监控节点认证" class="hash-link" aria-label="监控节点认证的直接链接" title="监控节点认证的直接链接">​</a></h5>
@@ -153,6 +167,6 @@
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="数据节点管理">数据节点管理<a href="#数据节点管理" class="hash-link" aria-label="数据节点管理的直接链接" title="数据节点管理的直接链接">​</a></h3>
 <p>一旦Inrevo IOT数据节点连接到Inrevo IOT 监控节点，您就可以管理数据节点，包括更新数据节点信息和访问数据节点的web界面。</p>
 <p><img decoding="async" loading="lazy" alt="image-20240924173537669" src="/zh-Hans/assets/images/nodes-f1f035eca4f2d0de7f6a89a97546a1d7.png" width="829" height="175" class="img_ev3q"></p>
-<p>​</p></div></article><nav class="pagination-nav docusaurus-mt-lg" aria-label="文件选项卡"><a class="pagination-nav__link pagination-nav__link--prev" href="/zh-Hans/docs/Qickstart/Installation"><div class="pagination-nav__sublabel">上一页</div><div class="pagination-nav__label">安装</div></a><a class="pagination-nav__link pagination-nav__link--next" href="/zh-Hans/docs/Qickstart/DataCollection"><div class="pagination-nav__sublabel">下一页</div><div class="pagination-nav__label">数据采集</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#数据节 点" class="table-of-contents__link toc-highlight">数据节点</a><ul><li><a href="#通过浏览器访问" class="table-of-contents__link toc-highlight">通过浏览器访问</a></li><li><a href="#登录数据节点网页" class="table-of-contents__link toc-highlight">登录数据节点网页</a></li><li><a href="#系统设置" class="table-of-contents__link toc-highlight">系统设置</a></li></ul></li><li><a href="#监控节点" class="table-of-contents__link toc-highlight">监控节点</a><ul><li><a href="#通过浏览器访问-1" class="table-of-contents__link toc-highlight">通过浏览器访问</a></li><li><a href="#登录监控节点网页" class="table-of-contents__link toc-highlight">登录监控节点网页</a></li><li><a href="#系统设置-1" class="table-of-contents__link toc-highlight">系统设置</a></li><li><a href="#数据节点管理" class="table-of-contents__link toc-highlight">数据节点管理</a></li></ul></li></ul></div></div></div></div></main></div></div></div><footer class="footer footer--dark"><div class="container container-fluid"><div class="footer__bottom text--center"><div class="footer__copyright">Copyright © 2024 Inrevo.</div></div></div></footer></div>
+<p>​</p></div></article><nav class="pagination-nav docusaurus-mt-lg" aria-label="文件选项卡"><a class="pagination-nav__link pagination-nav__link--prev" href="/zh-Hans/docs/Qickstart/Installation"><div class="pagination-nav__sublabel">上一页</div><div class="pagination-nav__label">安装</div></a><a class="pagination-nav__link pagination-nav__link--next" href="/zh-Hans/docs/Qickstart/DataCollection"><div class="pagination-nav__sublabel">下一页</div><div class="pagination-nav__label">数据采集</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#数据节点" class="table-of-contents__link toc-highlight">数据节点</a><ul><li><a href="#通过浏览器访问" class="table-of-contents__link toc-highlight">通过浏览器访问</a></li><li><a href="#登录数据节点网页" class="table-of-contents__link toc-highlight">登录数据节点网页</a></li><li><a href="#系统设置" class="table-of-contents__link toc-highlight">系统设置</a></li></ul></li><li><a href="#监控节点" class="table-of-contents__link toc-highlight">监控节点</a><ul><li><a href="#通过浏览器访问-1" class="table-of-contents__link toc-highlight">通过浏览器访问</a></li><li><a href="#登录监控节点网页" class="table-of-contents__link toc-highlight">登录监控节点网页</a></li><li><a href="#系统设置-1" class="table-of-contents__link toc-highlight">系统设置</a></li><li><a href="#数据节点管理" class="table-of-contents__link toc-highlight">数据节点管理</a></li></ul></li></ul></div></div></div></div></main></div></div></div><footer class="footer footer--dark"><div class="container container-fluid"><div class="footer__bottom text--center"><div class="footer__copyright">Copyright © 2024 Inrevo.</div></div></div></footer></div>
 </body>
 </html>
