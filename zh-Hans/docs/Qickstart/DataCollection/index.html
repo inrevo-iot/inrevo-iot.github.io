@@ -5,7 +5,7 @@
 <meta name="generator" content="Docusaurus v3.5.2">
 <title data-rh="true">数据采集 | Inrevo IOT</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:image" content="https://your-docusaurus-site.example.com/zh-Hans/img/docusaurus-social-card.jpg"><meta data-rh="true" name="twitter:image" content="https://your-docusaurus-site.example.com/zh-Hans/img/docusaurus-social-card.jpg"><meta data-rh="true" property="og:url" content="https://your-docusaurus-site.example.com/zh-Hans/docs/Qickstart/DataCollection"><meta data-rh="true" property="og:locale" content="zh_Hans"><meta data-rh="true" property="og:locale:alternate" content="en"><meta data-rh="true" name="docusaurus_locale" content="zh-Hans"><meta data-rh="true" name="docsearch:language" content="zh-Hans"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="数据采集 | Inrevo IOT"><meta data-rh="true" name="description" content="您可以在Inrevo IOT数据节点页面上配置数据采集。配置数据采集的过程包括:"><meta data-rh="true" property="og:description" content="您可以在Inrevo IOT数据节点页面上配置数据采集。配置数据采集的过程包括:"><link data-rh="true" rel="icon" href="/zh-Hans/img/favicon.ico"><link data-rh="true" rel="canonical" href="https://your-docusaurus-site.example.com/zh-Hans/docs/Qickstart/DataCollection"><link data-rh="true" rel="alternate" href="https://your-docusaurus-site.example.com/docs/Qickstart/DataCollection" hreflang="en"><link data-rh="true" rel="alternate" href="https://your-docusaurus-site.example.com/zh-Hans/docs/Qickstart/DataCollection" hreflang="zh-Hans"><link data-rh="true" rel="alternate" href="https://your-docusaurus-site.example.com/docs/Qickstart/DataCollection" hreflang="x-default"><link rel="alternate" type="application/rss+xml" href="/zh-Hans/blog/rss.xml" title="Inrevo IOT RSS Feed">
 <link rel="alternate" type="application/atom+xml" href="/zh-Hans/blog/atom.xml" title="Inrevo IOT Atom Feed"><link rel="stylesheet" href="/zh-Hans/assets/css/styles.9cbf8fdd.css">
-<script src="/zh-Hans/assets/js/runtime~main.83441e0b.js" defer="defer"></script>
+<script src="/zh-Hans/assets/js/runtime~main.3882a393.js" defer="defer"></script>
 <script src="/zh-Hans/assets/js/main.ba9604e3.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
@@ -51,7 +51,7 @@
 <p>​</p>
 <h4 class="anchor anchorWithStickyNavbar_LWe7" id="opc-ua">OPC UA<a href="#opc-ua" class="hash-link" aria-label="OPC UA的直接链接" title="OPC UA的直接链接">​</a></h4>
 <h5 class="anchor anchorWithStickyNavbar_LWe7" id="术语解释-4">术语解释<a href="#术语解释-4" class="hash-link" aria-label="术语解释的直接链接" title="术语解释的直接链接">​</a></h5>
-<table><thead><tr><th>术语</th><th>Description</th></tr></thead><tbody><tr><td>Server url</td><td>OPC UA 服务器的Endpoint Url，格式为 <code>opc.tcp://ipaddress:port/{servername}</code></td></tr><tr><td>Authentication method</td><td>认证方式支持匿名和用户帐号两种认证方式。</td></tr><tr><td>Security mode</td><td>指定义在通信期间如何保护消息的安全设置。包括None、Sign和SignAndEncrypt。</td></tr><tr><td>Security policy</td><td>定义了用于保护通信的安全加密算法和设置，包括None、Basic128Rsa15、Basic256、Basic256Sha256等。</td></tr></tbody></table>
+<table><thead><tr><th>术语</th><th>Description</th></tr></thead><tbody><tr><td>Server url</td><td>OPC UA 服务器的Endpoint Url，格式为 <code>opc.tcp://ipaddress:port/{servername}</code></td></tr><tr><td>Authentication method</td><td>认证方式支持匿名和用户帐号两种认证方式。</td></tr><tr><td>Security mode</td><td>指定义在通信期间如何保护消息的安全设置。包括None、Sign和SignAndEncrypt。</td></tr><tr><td>Security policy</td><td>定义了用于保护通信的安全加密算法和设置，包括None、Basic128Rsa15、Basic256、Basic256Sha256、Aes128_Sha256_RsaOaep 和 Aes256_Sha256_RsaPss等。</td></tr></tbody></table>
 <h5 class="anchor anchorWithStickyNavbar_LWe7" id="opc-ua-参数示例">OPC UA 参数示例<a href="#opc-ua-参数示例" class="hash-link" aria-label="OPC UA 参数示例的直接链接" title="OPC UA 参数示例的直接链接">​</a></h5>
 <p><img decoding="async" loading="lazy" alt="image-20240924181435426" src="/zh-Hans/assets/images/opcua-client-224c0eb7d982858ee2100e98c051d4be.png" width="816" height="829" class="img_ev3q"></p>
 <p>​</p>
@@ -70,7 +70,7 @@
 <p>​</p>
 <h2 class="anchor anchorWithStickyNavbar_LWe7" id="数据点位">数据点位<a href="#数据点位" class="hash-link" aria-label="数据点位的直接链接" title="数据点位的直接链接">​</a></h2>
 <p>数据点位是在系统中测量、收集或监控的具体位置或数据项，常用于工业自动化、监控和控制系统中。</p>
-<p>您也可以创建没有连接到实际设备的虚拟点位，可以根据其他实际点位进行计算得到其值(参见<a href="/zh-Hans/docs/Qickstart/DataCollection#%E5%AF%B9%E4%BA%8E%E8%99%9A%E6%8B%9F%E7%82%B9%E4%BD%8D">公式部分</a>)。</p>
+<p>您也可以创建没有连接到实际设备  的虚拟点位，可以根据其他实际点位进行计算得到其值(参见<a href="/zh-Hans/docs/Qickstart/DataCollection#%E5%AF%B9%E4%BA%8E%E8%99%9A%E6%8B%9F%E7%82%B9%E4%BD%8D">公式部分</a>)。</p>
 <p>点位组是为了便于管理而分组在一起的点的集合。</p>
 <p>配置完设备驱动后，您就可以为数据采集配置数据点位了。</p>
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="点位组">点位组<a href="#点位组" class="hash-link" aria-label="点位组的直接链接" title="点位组的直接链接">​</a></h3>
